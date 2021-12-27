@@ -23,8 +23,8 @@ while True:
                 else: continue
             break
         cyc += 1
-        cords = pyautogui.locateCenterOnScreen("screens/video_purple.png", confidence=0.8)
-        if not cords: cords = pyautogui.locateCenterOnScreen("screens/video.png", confidence=0.8)
+        cords = pyautogui.locateCenterOnScreen("../screens/video_purple.png", confidence=0.8)
+        if not cords: cords = pyautogui.locateCenterOnScreen("../screens/video.png", confidence=0.8)
         if not cords:
             print(f"[{cyc}] ERROR: Kein Video gefunden")
             print(f"[{cyc}] STATUS: Starte neu")
@@ -34,7 +34,7 @@ while True:
             pyautogui.click(cords)
     # # CLICK ON PLAY BUTTON
         time.sleep(2.5)
-        cords = pyautogui.locateCenterOnScreen("screens/ansehen.png", confidence=0.8)
+        cords = pyautogui.locateCenterOnScreen("../screens/ansehen.png", confidence=0.8)
         if not cords:
             print(f"[{cyc}] ERROR: Kein Play-Button gefunden")
             print(f"[{cyc}] STATUS: Starte neu")
@@ -48,8 +48,8 @@ while True:
         ext = False
         while not found:
             time.sleep(2)
-            cords = pyautogui.locateCenterOnScreen("screens/einloesen.png", confidence=0.8)
-            cords2 = pyautogui.locateCenterOnScreen("screens/ansehen2.png", confidence=0.8)
+            cords = pyautogui.locateCenterOnScreen("../screens/einloesen.png", confidence=0.8)
+            cords2 = pyautogui.locateCenterOnScreen("../screens/ansehen2.png", confidence=0.8)
             if cords:
                 found = True
                 print(f"\n[{cyc}] STATUS: 'Einlösen' gefunden, Versuch [{count}]")
@@ -66,7 +66,7 @@ while True:
         if ext: continue
     # # SEARCH FOR ACTIVATE OR NO THANKS
         time.sleep(1)
-        cords = pyautogui.locateCenterOnScreen("screens/ansehen.png", confidence=0.8)
+        cords = pyautogui.locateCenterOnScreen("../screens/ansehen.png", confidence=0.8)
         if not cords:
             print(f"[{cyc}] ERROR: Kein Play-Button gefunden")
             print(f"[{cyc}] STATUS: Starte neu")
@@ -75,9 +75,9 @@ while True:
         count = 1
         found = False
         while not found:
-            cords = pyautogui.locateCenterOnScreen("screens/einloesen.png", confidence=0.8)
-            cords2 = pyautogui.locateCenterOnScreen("screens/nein_danke.png", confidence=0.8)
-            cords3 = pyautogui.locateCenterOnScreen("screens/close.png")
+            cords = pyautogui.locateCenterOnScreen("../screens/einloesen.png", confidence=0.8)
+            cords2 = pyautogui.locateCenterOnScreen("../screens/nein_danke.png", confidence=0.8)
+            cords3 = pyautogui.locateCenterOnScreen("../screens/close.png")
             if cords:
                 found = True
                 print(f"\n[{cyc}] STATUS: 'Einlösen' gefunden, Versuch [{count}]")
