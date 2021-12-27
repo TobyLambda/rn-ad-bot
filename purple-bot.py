@@ -35,7 +35,7 @@ while True:
     # # CLICK ON PLAY BUTTON
         time.sleep(2.5)
         cords = pyautogui.locateCenterOnScreen("../screens/ansehen.png", confidence=0.8)
-        if not cords: pyautogui.locateCenterOnScreen("../screens/ansehen3.png", confidence=0.8)
+        if not cords: cords = pyautogui.locateCenterOnScreen("../screens/ansehen3.png", confidence=0.8)
         if not cords:
             print(f"[{cyc}] ERROR: Kein Play-Button gefunden")
             print(f"[{cyc}] STATUS: Starte neu")
@@ -69,7 +69,7 @@ while True:
     # # SEARCH FOR ACTIVATE OR NO THANKS
         time.sleep(1)
         cords = pyautogui.locateCenterOnScreen("../screens/ansehen.png", confidence=0.8)
-        if not cords: pyautogui.locateCenterOnScreen("../screens/ansehen3.png", confidence=0.8)
+        if not cords: cords = pyautogui.locateCenterOnScreen("../screens/ansehen3.png", confidence=0.8)
         if not cords:
             print(f"[{cyc}] ERROR: Kein Play-Button gefunden")
             print(f"[{cyc}] STATUS: Starte neu")
