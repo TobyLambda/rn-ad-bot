@@ -3,7 +3,7 @@ import time, pyautogui, os
 # # INI
 cyc = 0
 print("===========================================================\n"
-      "======== Railnation Auto-Werbe-Clicker Version 1.1 ========\n"
+      "======== Railnation Auto-Werbe-Clicker Version 2.0 ========\n"
       "===========================================================\n")
 input("ENTER drücken ...")
 while True:
